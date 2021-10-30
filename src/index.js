@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { configureStore } from './store';
+
+let store=configureStore();
+console.log('main index.js second',store);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,4 +15,4 @@ ReactDOM.render(
 );
 
 
-reportWebVitals();
+

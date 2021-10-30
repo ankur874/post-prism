@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchPost } from "../actions/post";
+import PostsList from "./PostsList";
 
 
 class App extends  React.Component{
@@ -8,12 +9,11 @@ class App extends  React.Component{
     this.props.dispatch(fetchPost());
   }
   render(){
+    const {post}=this.props;
     return(
-      <div className="App">
-      hello
-      {
-        console.log('state via props',this.props)
-      }
+      <div className="h-screen bg-blue-50">
+       <PostsList post={post}></PostsList>
+       
    </div>
     );
   }

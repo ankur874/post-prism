@@ -5,7 +5,7 @@ class PostsList extends React.Component{
     render(){
         const {SinglePost}=this.props;
         return(
-            <div className='post m-4 p-2 bg-gray-100 rounded-md'>
+            <div className='post m-4 p-2 w-1/2 bg-gray-100 rounded-md'>
                <div className='post-header flex flex-row'>
                    <div className='profile-img p-2'><i className="fas fa-user-circle text-3xl"></i></div>
                    <div className=' flex flex-col p-2'>
@@ -24,10 +24,10 @@ class PostsList extends React.Component{
                <input className='p-2 m-2' placeholder='Start typing a comment'></input>
                </div>
                <div className='post-comment-list  mt-2 ml-3'>
-                   <div className='post-comment-header w-1/6 flex justify-between'>
-                       <span className='post-comment-author text-gray-700'>Jack</span>
-                       <span className='post-comment-time text-gray-600'>a minute ago</span>
-                       <span className='post-comment-likes text-gray-600'>21</span>
+                   <div className='post-comment-header  flex justify-start'>
+                       <span className='post-comment-author m-1 text-gray-700'>Jack</span>
+                       <span className='post-comment-time m-1 text-gray-600'>a minute ago</span>
+                       <span className='post-comment-likes m-1 text-gray-600'>21</span>
                    </div>
                    <div className='post-comment-content'>
                        Random comment
